@@ -1,7 +1,20 @@
-﻿@{
+﻿@model IntroMVC.Models.Person
+@{
     Layout = "_Layout";
     ViewBag.Title = "Page One";
 }
+
 <div class="text-center">
     <h1 class="display-4">This is page one</h1>
 </div>
+<h2>Person</h2>
+<dl>
+    <dt>Id</dt>
+    <dd>@Model.Id</dd>
+    <dt>First name</dt>
+    <dd>@Model.FirstName</dd>
+    <dt>Last name</dt>
+    <dd>@Model.LastName</dd>
+    <dt>Date of birth</dt>
+    <dd>@Model.DateOfBirth</dd>
+</dl>

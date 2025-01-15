@@ -6,9 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Other\PageOne.cshtml" />
-  </ItemGroup>
-
 </Project>

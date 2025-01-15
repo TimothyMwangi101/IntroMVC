@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using IntroMVC.Models;
 
 namespace IntroMVC.Controllers
 {
@@ -18,7 +19,14 @@ namespace IntroMVC.Controllers
         }
         public IActionResult PageOne()
         {
-            return View();
+            Person person = new Person {
+                Id = 1,
+                FirstName = "Tim",
+                LastName = "Mwangi",
+                DateOfBirth = DateOnly.FromDateTime(DateTime.Now.AddDays(-7500))
+            };
+
+            return View(person);
         }
     }
 }

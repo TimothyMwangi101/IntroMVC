@@ -21,11 +21,11 @@
                             <a class="nav-link text-dark" href="@Url.Action("Index", "Other")">Other</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("index", "PageOne()" )">Page One</a>
+                            <a class="nav-link text-dark" href="@Url.Action("PageOne", "Other")">Page One</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("index", "Other" )">Page Two</a>
-                        </li>
+                        @* <li class="nav-item"> *@
+                        @*     <a class="nav-link text-dark" href="@Url.Action("index", "Other" )">Page Two</a> 
+                        </li>*@
                     </ul>
                 </div>
             </div>
@@ -33,9 +33,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <div class="text-center">
-                <h1 class="display-4">Welcome to MVC</h1>
-            </div>
+            @RenderBody()
         </main>
     </div>
 
