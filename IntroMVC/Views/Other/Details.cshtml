@@ -1,0 +1,19 @@
+﻿<h1>Hello from OtherControler/ Details</h1>
+<h2>Year = @ViewBag.Year</h2>
+<h2>Month = @ViewData["month"]</h2>
+<h2>Key = @ViewData["key"]</h2>
+
+<h3>Today is @DateOnly.FromDateTime(DateTime.Now)</h3>
+<h3>Today is @(DateTime.Now.Date)</h3>
+
+@{
+    var name = "Bob Loblaw";
+    var len = name.Length;
+}
+<p>The length of @name is @len bytes.</p>
+<ul>
+    @for (int i = 0; i < ViewBag.month; i++)
+    {
+        <li>Month @i + 1</li>
+    }
+</ul>
